@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	display: block;
+	background-color: #f8f8f8;
+	font-size: 1em;
+	line-height: 1.625em;
+	font-family: "Lora","Helvetica","Arial",sans-serif;
+	color: #767676;
+	font-weight: 400;
+}
+.header{
+	background-color: #232732;
+	padding-top: 140px;
+	background-image: linear-gradient(45deg,#2c5499,#3e97e6);
+	overflow: visible;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	width: 100%;
+	height: 1000px;
+	.background{
+		position: absolute;
+		left: 50%;
+		margin-left: -500px;
+		width: 1000px;
+		height: 1000px;
+		text-align: center;
+		#logo{
+            font-size: 6.5em;
+            color: #fff;
+		}
+		.lean{
+			line-height: 1.7em;
+		    font-size: 1.4em;
+		    color: #a9b5bf;
+		    color: rgba(255,255,255,0.75);	
+		    margin-top: 2.4em;
+		}
+		.list{
+			position: relative;
+			display: table;
+			margin: 0 auto;
+			margin-top: 1.8em;
+			li{
+				margin-top: 2em;
+				list-style-type: none;
+				float: left;
+				.lbtn,.rbtn{
+					display: block;
+					border-radius:3em;
+					width: 15em;
+					height: 4em;
+					line-height: 4em;
+					font-size: 0.5em;
+					font-weight: bold;
+					color: #fff;
+					text-decoration: none;
+				}
+				.lbtn{
+					background-color: #2dd98e;
+				}
+				.lbtn:hover{
+                    background-color: rgba(45,217,142,.75)
+				}
+				.rbtn{
+					background-color: rgba(255,255,255,.2);
+					border: 2px solid rgba(255,255,255,.07);
+					margin-left: 2em;
+					width: 14.8em;
+					height: 3.8em;
+					line-height: 3.8em;
+				}
+				.rbtn:hover{
+                    background-color: rgba(255,255,255,.6);
+                    border-color: solid rgba(255,255,255,.9);
+                    color: #000;
+				}
+			}
+		}
+		.img{
+			position: relative;
+			text-align: center;
+			width: 950px;
+			box-shadow: 0 6px 30px 0 rgba(0,0,0,.5);
+			background-color: #ccc;
+			overflow: hidden;
+			border-radius: 5px;
+			margin-top: 5em;
+			transition: all .5s cubic-bezier(0.29,1.02,1,0.93);
+			img{
+				max-width: 100%;
+				vertical-align: middle;
+			}
+		}
+		.img:hover{
+            transform: translateY(-5px);
+		}
+	}
+}
